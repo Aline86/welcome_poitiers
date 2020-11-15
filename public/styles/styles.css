@@ -18,7 +18,7 @@
     color: #000;
     pointer-events: none;
     cursor: default;
-
+    
   }
   
   /* add hover behaviour */
@@ -43,6 +43,7 @@
   */
   
   .sidenav a {
+    border-top: 1px solid white;
     background-color: rgb(196, 206, 52);
   }
   
@@ -52,19 +53,32 @@
     pointer-events: auto; 
    
   }
-  .accueil{
+div.accueil{
       width: 80%;
-      
+      background-image: url('../images/image2.png')  ;
+      background-size: contain;
+     background-repeat: no-repeat;
   }
+div.contain{
 
+}
 #header{
       display: flex;
       flex-direction: column;
       height: 250px;
+      
   }
   main{
       height: 1000px;
       display: flex;
+  }
+  .texte{
+      text-align: justify;
+      font-size: 25px;
+  }
+  h2{
+      text-align: center;
+      font-weight: bold;
   }
   .sticky {
     position: fixed;
@@ -79,6 +93,7 @@
   .flex{
       display: flex;
       height: 150px;
+      
   }
   .logo{
       width: 20%;
@@ -96,8 +111,45 @@
   .lien{
       width: 20%;
   }
+  .lien2{
+    width: 20%;
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
   .fab{
      padding-top: 45px; 
      color: blue;
       font-size: 65px;
+  }
+  .haut{
+    background-color: rgb(229, 230, 219);
+    padding-bottom: 2%;
+  }
+
+  .adresse{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+     
+  }
+
+  .map{
+      width: 40%;
+      justify-content: center;
+  }
+  .mini_bande{
+      height: 25px;
+      background-color: rgb(229, 230, 219);
+  }
+  .flex2{
+      display: flex;
+      height: 300px;
+  }
+  .footer{
+      background-color: rgb(212, 211, 211);
+      
   }

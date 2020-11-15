@@ -13,11 +13,13 @@
     </head>
     <body>
     <div id="header">
-        <div class="container">
-            <div class="flex">
-                <div class="logo"><img src="{{ asset('images/logo.png') }}" /></div>
-                <div class="titre">Welcome Poitiers</div>
-                <div class="liens"><i class="fab fa-facebook"></i></div>
+        <div class="haut">
+            <div class="container">
+                <div class="flex">
+                    <div class="logo"><img src="{{ asset('images/logo.png') }}" /></div>
+                    <div class="titre"><h1>Welcome Poitiers</h1></div>
+                    <div class="liens"><i class="fab fa-facebook"></i></div>
+                </div>
             </div>
         </div>
     <div class="bandeau">
@@ -33,12 +35,27 @@
             <div class="center">quam nihil molestiae consequatur, vel illum qui dolorem</div>
         </div>
     </div>
-</div>
-    
-    </div>
-    </div>
+
     
         {% block body %}{% endblock %}
+    <div class="footer">
+    <div class="container">
+        <div class="flex2">
+        
+            <div class="lien2"><i class="fab fa-facebook"></i></div>
+            <div class="adresse">
+                <h3>Welcome Poitiers</h3>
+                <br />
+                <span>23-25, rue du Général Sérail</span>
+                <br />
+                <span>86000 POITIERS</span>
+            </div>
+            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2741.890861295759!2d0.34070351547080496!3d46.58939487913041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fdbe76eb056bc1%3A0xb16f1b2037388dfd!2s23%20Rue%20du%20G%C3%A9n%C3%A9ral%20Sarrail%2C%2086000%20Poitiers!5e0!3m2!1sfr!2sfr!4v1605451424659!5m2!1sfr!2sfr" width="450" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+        </div>
+        
+    </div>
+    <div class="mini_bande"></div>
+    </div>
         {% block javascripts %}
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
